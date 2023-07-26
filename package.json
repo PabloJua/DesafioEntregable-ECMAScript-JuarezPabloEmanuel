@@ -17,5 +17,8 @@
     "url": "https://github.com/PabloJua/DesafioEntregable-ECMAScript-JuarezPabloEmanuel/issues"
   },
   "homepage": "https://github.com/PabloJua/DesafioEntregable-ECMAScript-JuarezPabloEmanuel#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
