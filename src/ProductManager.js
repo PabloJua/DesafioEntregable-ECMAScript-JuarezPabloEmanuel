@@ -94,7 +94,7 @@ class ProductManager {
                 max = item.id + 1;
             }
         })
-        return max + 1;
+        return max;
 
         // return this.products > 0  ? this.products[this.products.length-1].id+1 : 1; // : sino ; ? entonces
     }

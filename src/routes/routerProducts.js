@@ -90,7 +90,6 @@ productsRouter.put("/:pid", (req, res) => {
         res.status(400).send({status:"error", message:"Error! No se cargo el campo stock"})
     }
 
-    
     if(!category) {
         res.status(400).send({status:"error", message:"Error! No se cargo el campo category"})
     }
@@ -102,7 +101,6 @@ productsRouter.put("/:pid", (req, res) => {
         res.status(400).send({status: "error", message: "Debe ingresar al menos una imagen en el Array Thumbnails"});
         return false;
     }
-
 
     if(PM.updateProduct(pid, {title, description, code, price, status, stock, category, thumbnails})) {
         res.send({status:"ok", message:"El producto se actualizó correctamente!"});
